@@ -1,7 +1,6 @@
 .btn:link,
 .btn:visited {
   text-decoration: none;
-  width: 163px;
   border-radius: 5px;
   text-align: center;
   padding: 15px 50px 15px 50px;
@@ -13,6 +12,7 @@
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
+    width: 63px;
   
     &:hover {
       background-position: left bottom;
@@ -23,14 +23,20 @@
     }
   }
 
-  &.btn-light {
-    color: $color-anthrazit;
-    border: 3px solid $color-anthrazit;
-    background-color: $color-white;
+  &.btn-border {
+    color: $color-white;
+    border: 3px solid $color-white;
+    background-color: $color-anthrazit;
+    background: linear-gradient(to right, $color-white 50%, $color-anthrazit 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    align-self: center;
+    width: 82px;
   
     &:hover {
-      color: $color-white;
-      background-color: $color-anthrazit;
+        background-position: left bottom;
+        color: $color-anthrazit;
     }
 
     &:active {

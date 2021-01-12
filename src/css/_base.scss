@@ -1,15 +1,10 @@
 body {
-  background: $color-white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: $font-size-text-m;
-  line-height: 1.3;
-  color: $color-anthrazit;
+  background-color: $color-white;
 }
 
 main {
   div {
-    color: yellow;
+    color: $color-anthrazit;
 
     @media (min-width: 768px) {
       color: var(--div-color);
