@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index Page</title>
     <link rel="stylesheet" href="css/main.scss" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oregano"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <include src="header.html"></include>
     <main>
-      <a href="./my-subpage/index.html">Link to Subpage</a>
-      <div>Home</div>
+      <h2>Rösterei & Café</h2>
+      <p>Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen Café in der Innenstadt.</p>
+      <table>
+        <tr>
+          <td>Komm vorbei!</td>
+          <td>Mo – Fr 8–18 Uhr</td>
+        </tr>
+        <tr>
+          <td>Fraunhoferstr. 13, Kiel</td>
+          <td>Sa 11–18 Uhr</td>
+        </tr>
+      </table>
+      <img class="coffee-shop" src="images/coffee-shop.jpg" alt="busy coffee shop">
+      <h3>Bio und Fair</h3>
+      <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität</p>
+      <img class="coffee-plant" src="images/coffee-plant2.jpg" alt="coffee plant">
     </main>
+
+    <include src="footer.html"></include>
     <script src="js/index.js"></script>
   </body>
 </html>
