@@ -1,50 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: auto 25px;
+    font-size: $font-size-text-m;
+    line-height: 1.3;
+    color: $color-anthrazit;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     color: $color-white;
     text-align: center;
     line-height: 1.1;
     margin: 0;
-  
+
     .heading-main {
-      display: block;
-      font-weight: 900;
-      font-size: $font-size-h1-m;
+        display: block;
+        font-weight: 900;
+        font-size: $font-size-h1-m;
     }
-  
+
     .heading-sub {
-      display: block;
-      font-weight: 400;
-      font-size: $font-size-text;
-      margin-bottom: 130px;
-      }
-  }
-  
-  h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: $font-size-h2-m;
-    line-height: 1.1;
-    margin: 0;
-  
+        display: block;
+        font-weight: 400;
+        font-size: $font-size-text;
+        margin-bottom: 130px;
+        }
+}
+
+h2 {
+font-family: 'Roboto', sans-serif;
+font-weight: 900;
+font-size: $font-size-h2-m;
+line-height: 1.1;
+margin: 0;
+
     &.dark {
-      color: $color-anthrazit;
+        color: $color-anthrazit;
     }
-  
+
     &.light {
-      color: $color-white
+        color: $color-white
     }
-  }
-  
-  h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: $font-size-h3-m;
-    color: $color-anthrazit;
-    line-height: 1.1;
-    margin: 0;
-  }
+}
+
+h3 {
+font-family: 'Roboto', sans-serif;
+font-weight: 900;
+font-size: $font-size-h3-m;
+color: $color-anthrazit;
+line-height: 1.1;
+
+    &.dark {
+        color: $color-anthrazit;
+        }
+
+    &.light {
+        color: $color-white
+    }
+
+    .heading-sub {
+        color: $color-white;
+        display: block;
+        font-weight: 400;
+        font-size: $font-size-text;
+    }
+}
+
+
 
 p {
+    &.light {
+        color: $color-white;
+        font-size: $font-size-text-m;
+        line-height: 1.3;
+        margin: 0;
+    }
+
     &.product-name {
         color: $color-white;
         font-size: $font-size-text;
@@ -57,3 +89,4 @@ p {
         margin: 0;
     }
 }
+

@@ -6,38 +6,58 @@
 @import "components/typo";
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  margin: auto 25px;
-  font-size: $font-size-text-m;
-  line-height: 1.3;
-  color: $color-anthrazit;
   margin: 0;
 }
 
 .navigation {
   display: flex;
   justify-content: flex-end;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
 
-  .nav-link {
+  a {
     color: $color-white;
     text-decoration: none;
     padding: 20px 60px;
+
+    &::after {
+      content: ' ';
+      width: 0;
+      height: 1px;
+      border-bottom: 0;
+      left: 0;
+      background-color: #FFF;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+      display: block;
+    }
+  
+    &:hover::after {
+      visibility: visible;
+      width: 100%;
+    }
+
+    &.active::after {
+      visibility: visible;
+      width: 100%;
+    }
   }
+  
 }
 
 .header {
-  background-image: url(../images/coffee-latte-art2.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/coffee-latte-art2.jpg);
   background-repeat: no-repeat;
   height: 75vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   display: relative;
-  margin-bottom: 60px;
 }
 
-.logo-box {
+.logo-box-header {
   position: absolute;
   display: flex;
   top: 10px;
@@ -46,7 +66,7 @@ body {
 
 .logo {
   height: 35px;
-  fill: $color-white;
+  width: 35px;
 }
 
 .content-box {
@@ -57,11 +77,17 @@ body {
 }
 
 .intro {
-  padding: 0 25px;
+  padding: 60px 25px;
 }
 
-.invitaion {
+.invitation-box {
+  width: 155px;
+}
+
+.invitation-content {
   display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 .time {
@@ -80,13 +106,11 @@ body {
 
   &.coffee-plant {
     margin-right: auto;
-    margin-bottom: 60px;
   }
 }
 
 .product-overview {
   background-color: $color-anthrazit;
-  padding-top: 60px;
   padding: 60px 25px;
   display: flex;
   flex-direction: column;
@@ -100,7 +124,6 @@ body {
 }
 
 .product-pic {
-  display: flex;
   width: 155px;
 }
 
@@ -110,8 +133,130 @@ body {
   margin-top: 40px;
 }
 
+.origin {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/coffee-bags.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
+  a {
+    text-decoration: none;
+    color: $color-white;
+    margin-top: 20px;
 
+    &::after {
+      content: ' ';
+      width: 0;
+      height: 1px;
+      border-bottom: 0;
+      left: 0;
+      background-color: #FFF;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+      display: block;
+    }
+  
+    &:hover::after {
+      visibility: visible;
+      width: 100%;
+    }
 
+    &.active::after {
+      visibility: visible;
+      width: 100%;
+    }
+  }
+}
 
+.content-box-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 241px;
+  margin: auto;
+  text-align: center;
+}
 
+.icon-line-small {
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.icon-small {
+  height: 15px;
+  width: 15px;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 25px;
+}
+
+.product-pic-grand {
+  width: 215px;
+  margin: 35px auto;
+}
+
+.icon-line-grand {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.icon-grand {
+  height: 45px;
+  width: 45px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.location h2 {
+  padding: 10px 25px 35px 25px;
+}
+
+iframe {
+  width: 100%;
+  height: 230px;
+  border: none;
+  display: block;
+}
+
+.footer {
+  background-color: $color-black;
+  padding: 60px 25px;
+}
+
+.logo-box-footer {
+  display: flex;
+  top: 10px;
+  left: 25px;
+}
+
+.footer-box {
+  width: 155px;
+}
+
+.footer-invitation {
+  display: flex;
+  justify-content: space-between;
+  margin: 34px 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
