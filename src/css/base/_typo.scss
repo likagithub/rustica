@@ -18,6 +18,10 @@ h1 {
         display: block;
         font-weight: 900;
         font-size: $font-size-h1-m;
+
+        @include respond(media-xl){
+            font-size: $font-size-h1;
+        }
     }
 
     .heading-sub {
@@ -35,6 +39,10 @@ font-size: $font-size-h2-m;
 line-height: 1.1;
 margin: 0;
 
+    @include respond(media-xl){
+        font-size: $font-size-h2;
+    }
+
     &.dark {
         color: $color-anthrazit;
     }
@@ -50,6 +58,11 @@ font-weight: 900;
 font-size: $font-size-h3-m;
 color: $color-anthrazit;
 line-height: 1.1;
+margin: 0;
+
+    @include respond(media-xl){
+        font-size: $font-size-h3;
+    }
 
     &.dark {
         color: $color-anthrazit;
@@ -70,11 +83,18 @@ line-height: 1.1;
 
 
 p {
+    @include respond(media-xl){
+        font-size: $font-size-text;
+    }
+
     &.light {
         color: $color-white;
         font-size: $font-size-text-m;
         line-height: 1.3;
-        margin: 0;
+
+        @include respond(media-xl){
+            font-size: $font-size-text;
+        }
     }
 
     &.product-name {
@@ -86,6 +106,17 @@ p {
     &.product-price {
         color: $color-medium-grey;
         font-size: $font-size-text-m;
+        margin: 0;
+
+        @include respond(media-xl){
+            font-size: $font-size-text;
+        }
+    }
+
+    &.light-footer {
+        color: $color-white;
+        font-size: $font-size-text-m;
+        line-height: 1.3;
         margin: 0;
     }
 }

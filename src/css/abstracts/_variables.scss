@@ -22,8 +22,12 @@ $font-size-h3-m: 2rem;      // 32px
 $font-size-text-m: 0.875rem;    //14px
 
 // Media Queries
-$media-sm: 576px;
-$media-md: 768px;
-$media-lg: 992px;
-$media-xl: 1200px;
-$media-xxl: 1920px;
+$media-sm: 36em;    //576px
+$media-md: 48em;    //768px
+$media-lg: 62em;    //992px
+$media-xl: 75em;    //1200px
+$media-xxl: 120em;  //1920px
+
+// Section Paddings
+$section-padding-mobile: 60px 25px;
+$section-padding-desktop: 125px 25px;

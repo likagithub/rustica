@@ -1,93 +1,61 @@
-@import "abstracts/variables";
 @import "abstracts/mixins";
-@import "base";
-@import "components/hero";
+@import "abstracts/variables";
+@import "base/typo";
+@import "base/base";
 @import "components/buttons";
-@import "components/typo";
+@import "components/navigation";
+@import "components/header";
+@import "components/footer";
+@import "pages/home.scss";
 
-body {
-  margin: 0;
-}
 
-.navigation {
-  display: flex;
-  justify-content: flex-end;
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  a {
-    color: $color-white;
-    text-decoration: none;
-    padding: 20px 60px;
-
-    &::after {
-      content: ' ';
-      width: 0;
-      height: 1px;
-      border-bottom: 0;
-      left: 0;
-      background-color: #FFF;
-      visibility: hidden;
-      transition: all 0.3s ease-in-out;
-      display: block;
-    }
-  
-    &:hover::after {
-      visibility: visible;
-      width: 100%;
-    }
-
-    &.active::after {
-      visibility: visible;
-      width: 100%;
-    }
-  }
-  
-}
-
-.header {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/coffee-latte-art2.jpg);
-  background-repeat: no-repeat;
-  height: 75vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  display: relative;
-}
-
-.logo-box-header {
-  position: absolute;
-  display: flex;
-  top: 10px;
-  left: 25px;
-}
-
-.logo {
-  height: 35px;
-  width: 35px;
-}
-
-.content-box {
+.intro {
+  padding: $section-padding-mobile;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20vh;
+
+  @include respond(media-xl) {
+    padding: $section-padding-desktop;
+  }
 }
 
-.intro {
-  padding: 60px 25px;
+.invitation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include respond(media-md) {
+    flex-direction: row;
+  }
+
+  @include respond(media-xl) {
+    max-width: 90vw;
+  }
+
+  @include respond(media-xxl) {
+    max-width: 70vw;
+  }
+
+  p {
+    max-width: 400px;
+  }
 }
 
 .invitation-box {
   width: 155px;
+  margin-right: auto;
+
+  @include respond(media-lg) {
+    width: 200px;
+  }
 }
 
 .invitation-content {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  max-width: 450px;
 }
 
 .time {
@@ -99,6 +67,30 @@ body {
   display: flex;
   margin-top: 40px;
 
+  @include respond(media-sm) {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  @include respond(media-md) {
+    margin-top: 0px;
+  }
+
+  @include respond(media-lg) {
+    width: 450px;
+    margin-top: 0;
+  }
+
+  @include respond(media-xl) {
+    width: 600px;
+    margin-top: 0;
+  }
+
+  @include respond(media-xxl) {
+    width: 800px;
+    margin-top: 0;
+  }
+
   &.coffee-shop {
     margin-left: auto;
     margin-bottom: 40px;
@@ -109,11 +101,51 @@ body {
   }
 }
 
-.product-overview {
-  background-color: $color-anthrazit;
-  padding: 60px 25px;
+.promise {
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  @include respond(media-md) {
+    flex-direction: row-reverse;
+  }
+
+  @include respond(media-xl) {
+    max-width: 90vw;
+  }
+
+  @include respond(media-xxl) {
+    max-width: 70vw;
+  }
+
+  .container {
+    max-width: 400px;
+    margin-right: auto;
+  }
+}
+
+.product-overview {
+  background-color: $color-anthrazit;
+  padding: $section-padding-mobile;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond(media-xl) {
+    padding: $section-padding-desktop;
+  }
+}
+
+.product-content {
+  width: 100%;
+
+  @include respond(media-xl) {
+    max-width: 90vw;
+  }
+
+  @include respond(media-xxl) {
+    max-width: 70vw;
+  }
 }
 
 .products {
@@ -125,12 +157,36 @@ body {
 
 .product-pic {
   width: 155px;
+
+  @media (min-width: 514px) {
+    width: 180px;
+  }
+
+  @include respond(media-sm) {
+    width: 200px;
+  }
+
+  @include respond(media-md) {
+    width: 240px;
+  }
+
+  @include respond(media-lg) {
+    width: 280px;
+  }
+
+  @include respond(media-xl) {
+    width: 300px;
+  }
 }
 
 .product-box {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+
+  @include respond(media-xl) {
+    margin-top: 80px;
+  }
 }
 
 .origin {
@@ -146,7 +202,10 @@ body {
   a {
     text-decoration: none;
     color: $color-white;
-    margin-top: 20px;
+
+    @include respond(media-xl) {
+      font-size: $font-size-text;
+    }
 
     &::after {
       content: ' ';
@@ -176,9 +235,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 241px;
+  width: 240px;
   margin: auto;
   text-align: center;
+
+  @include respond(media-xl) {
+    width: 300px;
+  }
 }
 
 .icon-line-small {
@@ -197,35 +260,110 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 25px;
+  padding: $section-padding-mobile;
+
+  @include respond(media-xl) {
+    padding: $section-padding-desktop;
+  }
 }
 
-.product-pic-grand {
-  width: 215px;
-  margin: 35px auto;
-}
-
-.icon-line-grand {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin-bottom: 40px;
-}
-
-.icon-grand {
-  height: 45px;
-  width: 45px;
-}
-
-.icon-box {
+.ingredients-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
   align-items: center;
+  justify-content: space-evenly;
+  
+  @include respond(media-xl) {
+    display: flex;
+    flex-direction: row;
+    max-width: 60vw;
+  }
+
+  .product-pic-grand {
+    width: 215px;
+    margin: 35px auto;
+  
+    @include respond(media-sm) {
+      width: 300px;
+      margin: 35px 0;
+    }
+  }
+  
+  .ingredients-content-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(media-xl) {
+      align-items: flex-start;
+      height: 400px;
+    }
+  }
+
+  .icon-line-grand {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+    margin-bottom: 40px;
+  
+    @include respond(media-xl) {
+      flex-direction: column;
+      width: 200px;
+      height: 100%;
+      justify-content: space-between;
+    }
+  }
+  
+  .icon-grand {
+    height: 45px;
+    width: 45px;
+  
+    @include respond(media-xl) {
+      margin-right: 30px;
+    }
+  }
+  
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  
+    @include respond(media-xl) {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
 }
 
-.location h2 {
+.location {
+  
+}
+
+.location-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  @include respond(media-xl) {
+    flex-direction: column;
+  }
+}
+
+.heading-box {
   padding: 10px 25px 35px 25px;
+
+  h2 {
+    @include respond(media-xl) {
+      width: 90vw;
+    }
+
+    @include respond(media-xxl) {
+      max-width: 70vw;
+    }
+  }
 }
 
 iframe {
@@ -233,30 +371,16 @@ iframe {
   height: 230px;
   border: none;
   display: block;
-}
 
-.footer {
-  background-color: $color-black;
-  padding: 60px 25px;
-}
+  @include respond(media-sm) {
+    height: 290px;
+  }
 
-.logo-box-footer {
-  display: flex;
-  top: 10px;
-  left: 25px;
-}
+  @include respond(media-md) {
+    height: 360px;
+  }
 
-.footer-box {
-  width: 155px;
-}
-
-.footer-invitation {
-  display: flex;
-  justify-content: space-between;
-  margin: 34px 0;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: space-between;
+  @include respond(media-xl) {
+    height: 480px;
+  }
 }
