@@ -8,12 +8,16 @@
   &.btn-dark {
     color: $color-white;
     background-color: $color-anthrazit;
-    background: linear-gradient(to right, $color-brown-grey 50%, $color-anthrazit 50%);
+    background: linear-gradient(
+      to right,
+      $color-brown-grey 50%,
+      $color-anthrazit 50%
+    );
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
     width: 63px;
-  
+
     &:hover {
       background-position: left bottom;
     }
@@ -27,16 +31,20 @@
     color: $color-white;
     border: 3px solid $color-white;
     background-color: $color-anthrazit;
-    background: linear-gradient(to right, $color-white 50%, $color-anthrazit 50%);
+    background: linear-gradient(
+      to right,
+      $color-white 50%,
+      $color-anthrazit 50%
+    );
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
     align-self: center;
     width: 82px;
-  
+
     &:hover {
-        background-position: left bottom;
-        color: $color-anthrazit;
+      background-position: left bottom;
+      color: $color-anthrazit;
     }
 
     &:active {
