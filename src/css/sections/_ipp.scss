@@ -1,0 +1,43 @@
+.ipp {
+    padding: 80px 25px;
+
+    @include respond(media-lg) {
+      padding: 200px 310px 125px 310px;
+    }
+}
+
+.ipp-content {
+    @include respond(media-lg) {
+        width: 50vw;
+        margin: auto;
+        max-width: 1000px;
+      }
+
+    h2 {
+        margin: 30px auto;
+    }
+
+    h3 {
+        margin: 20px auto -20px auto;
+
+        &.first {
+            margin: 20px auto 20px auto;
+        }
+    }
+
+    p {
+        margin: 20px 0;
+    }
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+li {
+    &.middle {
+        margin: 20px 0;
+    }
+}

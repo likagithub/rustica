@@ -1,8 +1,5 @@
 .origin {
     padding: $section-padding-mobile;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   
     @include respond(media-xl) {
       padding: $section-padding-desktop;

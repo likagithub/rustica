@@ -1,0 +1,20 @@
+.video-section {
+    padding: 0 25px;
+}
+
+.video {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+
+    @include respond(media-xl) {
+        width: 90vw;
+    }
+    
+    @include respond(media-xxl) {
+        width: 70vw;
+        max-width: 2000px;
+    }
+}

@@ -80,7 +80,7 @@ h3 {
   }
 }
 
-p {
+p, li {
   @include respond(media-xl) {
     font-size: $font-size-text;
   }
