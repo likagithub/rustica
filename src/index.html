@@ -11,7 +11,10 @@
       rel="stylesheet"
     />
   </head>
+
+  <!-------- Body -------->
   <body>
+    <!-------- Navigation & Header -------->
     <div class="navbar">
       <div class="logo-box-header">
         <a href="#"
@@ -24,11 +27,14 @@
         <a href="/shop/index.html">Shop</a>
       </nav>
     </div>
-    <include src="header.html"></include>
+    <include src="header-home.html"></include>
+
+    <!-------- Main Content -------->
     <main>
+      <!-------- Intro -------->
       <section class="intro">
         <div class="invitation">
-          <div class="container">
+          <div class="container left">
             <h2 class="dark">Rösterei & Café</h2>
             <p>
               Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen
@@ -55,8 +61,9 @@
             alt="busy coffee shop"
           />
         </div>
+
         <div class="promise">
-          <div class="container">
+          <div class="container right narrow">
             <h3 class="dark">Bio und Fair</h3>
             <p>
               Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
@@ -72,6 +79,8 @@
           />
         </div>
       </section>
+
+      <!-------- Produtcs -------->
       <sectiton class="product-overview">
         <div class="product-content">
           <h2 class="light">Entdecke unsere Kaffee Sorten</h2>
@@ -220,7 +229,9 @@
         </div>
         <a href="shop/index.html" class="btn btn-border">alle Produkte</a>
       </sectiton>
-      <section class="origin">
+
+      <!-------- Origin -------->
+      <section class="origin-teaser">
         <div class="content-box-section">
           <h3 class="light">Herkunft</h3>
           <p class="light">
@@ -231,6 +242,8 @@
           <a href="herkunft/index.html">mehr</a>
         </div>
       </section>
+
+      <!-------- Ingredients -------->
       <section class="ingredients">
         <h2 class="dark">Das steckt drin</h2>
         <div class="ingredients-content">
@@ -279,6 +292,8 @@
           </div>
         </div>
       </section>
+
+      <!-------- Location -------->
       <section class="location">
         <div class="location-heading">
           <div class="heading-box">
@@ -292,7 +307,11 @@
         ></iframe>
       </section>
     </main>
+
+    <!-------- Footer -------->
     <include src="footer.html"></include>
+
+    <!-------- JS Include -------->
     <script src="js/index.js"></script>
   </body>
 </html>

@@ -11,26 +11,105 @@
       rel="stylesheet"
     />
   </head>
+
+  <!-------- Body -------->
   <body>
-    <div class="logo-box-header">
-      <a href="../index.html"
-        ><img src="/images/_elements/logo.svg" alt="Logo" class="logo"
-      /></a>
+    <!-------- Navigation & Header -------->
+    <div class="navbar">
+      <div class="logo-box-header">
+        <a href="/index.html"
+          ><img
+            src="/images/_elements/logo.svg"
+            alt="Logo and Link Home"
+            class="logo"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <a href="/das-cafe/index.html">das Café</a>
+        <a href="/herkunft/index.html" class="active">Herkunft</a>
+        <a href="/shop/index.html">Shop</a>
+      </nav>
     </div>
-    <nav class="navigation">
-      <a href="/das-cafe/index.html">das Café</a>
-      <a href="/herkunft/index.html" class="active">Herkunft</a>
-      <a href="/shop/index.html">Shop</a>
-    </nav>
-    <include src="header.html"></include>
-    <h1>Hello World!</h1>
+    <include src="header-herkunft.html"></include>
+
+    <!-------- Main Content -------->
     <main>
-      <div class="hero">HERO</div>
-      <a href="/">Home</a>
+      <!-------- Intro -------->
+      <section class="intro">
+        <div class="intro-content">
+          <div class="container-centered">
+            <h2 class="dark">Der Ursprung von Rustica</h2>
+            <p>
+              Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+              Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in
+              Buchstabhausen an der Küste des Semantik, eines großen
+              Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren
+              Ort und versorgt sie mit den nötigen Regelialien. Es ist ein
+              paradiesmatisches Land, in dem einem gebratene Satzteile in den
+              Mund fliegen.Nicht einmal von der allmächtigen Interpunktion
+              werden die Blindtexte beherrscht – ein geradezu unorthographisches
+              Leben.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-------- Video -------->
+
+      <!-------- Origin -------->
+      <section class="origin">
+        <div class="area">
+          <div class="container left narrow">
+            <h3 class="dark">Die Anbaugebiete</h3>
+            <p>
+              Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+              Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in
+              Buchstabhausen an der Küste des Semantik, eines großen
+              Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren
+              Ort und versorgt sie mit den nötigen Regelialien. Es ist ein
+              paradiesmatisches Land, in dem einem gebratene Satzteile in den
+              Mund fliegen.Nicht einmal von der allmächtigen Interpunktion
+              werden die Blindtexte beherrscht – ein geradezu unorthographisches
+              Leben.
+            </p>
+          </div>
+          <img
+            class="origin-pic coffee-plant-2"
+            src="/images/coffee-plant.jpg"
+            alt="coffee plant"
+          />
+        </div>
+
+        <div class="fairness">
+          <div class="container right narrow">
+            <h3 class="dark">Das Wohl der Kaffeebauern</h3>
+            <p>
+              Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+              Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in
+              Buchstabhausen an der Küste des Semantik, eines großen
+              Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren
+              Ort und versorgt sie mit den nötigen Regelialien. Es ist ein
+              paradiesmatisches Land, in dem einem gebratene Satzteile in den
+              Mund fliegen.Nicht einmal von der allmächtigen Interpunktion
+              werden die Blindtexte beherrscht – ein geradezu unorthographisches
+              Leben.
+            </p>
+          </div>
+          <img
+            class="origin-pic coffee-worker"
+            src="/images/coffee-worker.jpg"
+            alt="coffee worker"
+          />
+        </div>
+      </section>
     </main>
-    <script src="../js/index.js"></script>
+
+    <!-------- Footer -------->
     <footer>
       <include src="footer.html"></include>
     </footer>
+
+    <!-------- JS Include -------->
+    <script src="../js/index.js"></script>
   </body>
 </html>

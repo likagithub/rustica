@@ -10,10 +10,31 @@
 }
 
 .container {
-  width: 60vw;
+  width: 50vw;
+  min-width: 300px;
 
-  p {
-    max-width: 600px;
+  &.left {
+    @include respond(media-md) {
+      margin-right: 3vw;
+      max-width: 600px;
+    }
+
+    &.narrow {
+      @include respond(media-md) {
+        margin-right: auto;
+        max-width: 400px;
+      }
+    }
+  }
+
+  &.right {
+    &.narrow {
+      @include respond(media-md) {
+        margin-left: 3vw;
+        margin-right: auto;
+        max-width: 400px;
+      }
+    }
   }
 }
 
@@ -48,7 +69,7 @@
 .invitation-content {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin-top: 20px;
   max-width: 450px;
 }
 
@@ -57,10 +78,11 @@
 }
 
 .intro-pic {
-  width: 40vw;
+  width: 45vw;
   max-width: 800px;
+  min-width: 250px;
   display: flex;
-  margin-top: 40px;
+  margin-top: 26px;
 
   @include respond(media-md) {
     margin-top: 0px;
@@ -68,11 +90,19 @@
 
   &.coffee-shop {
     margin-left: auto;
-    margin-bottom: 40px;
+    margin-bottom: 7vh;
   }
 
   &.coffee-plant {
     margin-right: auto;
+
+    @include respond(media-md) {
+      margin-top: 0px;
+    }
+  }
+
+  &.coffee-machine {
+    margin-left: auto;
   }
 }
 
@@ -83,6 +113,7 @@
 
   @include respond(media-md) {
     flex-direction: row-reverse;
+    align-items: center;
   }
 
   @include respond(media-xl) {
@@ -92,11 +123,5 @@
   @include respond(media-xxl) {
     width: 70vw;
     max-width: 2000px;
-  }
-
-  h3, p {
-    @include respond(media-md) {
-      margin-left: 10vw;
-    }
   }
 }

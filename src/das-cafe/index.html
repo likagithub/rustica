@@ -11,26 +11,141 @@
       rel="stylesheet"
     />
   </head>
+
+  <!-------- Body -------->
   <body>
-    <div class="logo-box-header">
-      <a href="../index.html"
-        ><img src="/images/_elements/logo.svg" alt="Logo" class="logo"
-      /></a>
+    <!-------- Navigation & Header -------->
+    <div class="navbar">
+      <div class="logo-box-header">
+        <a href="/index.html"
+          ><img src="/images/_elements/logo.svg" alt="Logo" class="logo"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <a href="/das-cafe/index.html" class="active">das Café</a>
+        <a href="/herkunft/index.html">Herkunft</a>
+        <a href="/shop/index.html">Shop</a>
+      </nav>
     </div>
-    <nav class="navigation">
-      <a href="/das-cafe/index.html" class="active">das Café</a>
-      <a href="/herkunft/index.html">Herkunft</a>
-      <a href="/shop/index.html">Shop</a>
-    </nav>
-    <include src="header.html"></include>
-    <h1>Hello World!</h1>
+    <include src="header-cafe.html"></include>
+
+    <!-------- Main Content -------->
     <main>
-      <div class="hero">HERO</div>
-      <a href="/">Home</a>
+      <!-------- Intro -------->
+      <section class="intro">
+        <div class="invitation">
+          <div class="container left">
+            <h2 class="dark">Rösterei & Café</h2>
+            <p>
+              Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen
+              Rösterei, serviert im gemütlichen Café in der Innenstadt.
+            </p>
+            <div class="invitation-content">
+              <div class="invitation-box">
+                <p>
+                  Komm uns besuchen!<br />
+                  Fraunhoferstr. 13, Kiel
+                </p>
+              </div>
+              <div class="invitation-box">
+                <p>
+                  Mo – Fr 8–18 Uhr<br />
+                  Sa 11–18 Uhr
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            class="intro-pic coffee-machine"
+            src="/images/coffee-machine.jpg"
+            alt="coffee machine"
+          />
+        </div>
+      </section>
+
+      <!-------- Pastries -------->
+      <section class="pastries">
+        <div class="pastries-content">
+          <div class="container-centered">
+            <h3 class="dark">Frisches Gebäck von nebenan</h3>
+            <p>
+              Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf
+              es einen letzten Blick zurück auf die Skyline seiner Heimatstadt
+              Buchstabhausen, die Headline von Alphabetdorf. Wehmütig lief ihm
+              eine rhetorische Frage über die Wange, dann setzte es seinen Weg
+              fort. Unterwegs traf es eine Copy. Die Copy warnte das
+              Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben
+              worden und alles, was von ihrem Ursprung noch übrig wäre, sei das
+              Wort "und" und das Blindtextchen solle umkehren und wieder in sein
+              eigenes, sicheres Land zurückkehren.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-------- Image Gallery -------->
+      <section class="image-gallery">
+        <div class="image-gallery-content">
+          <img class="g-image i1" src="/images/danish.jpg" alt="danish" />
+          <img
+            class="g-image i2"
+            src="/images/coffee-latte-art.jpg"
+            alt="espresso in the making"
+          />
+          <img
+            class="g-image i3"
+            src="/images/coffee-machine2.jpg"
+            alt="busy coffee shop"
+          />
+          <img
+            class="g-image i4"
+            src="/images/coffee-breakfast.jpg"
+            alt="busy coffee shop"
+          />
+          <img
+            class="g-image i5"
+            src="/images/coffee-latte-art3.jpg"
+            alt="busy coffee shop"
+          />
+          <img
+            class="g-image i6"
+            src="/images/coffee-list.jpg"
+            alt="busy coffee shop"
+          />
+          <img
+            class="g-image i7"
+            src="/images/coffee-sign.jpg"
+            alt="busy coffee shop"
+          />
+          <img
+            class="g-image i8"
+            src="/images/coffee-latte-art2.jpg"
+            alt="busy coffee shop"
+          />
+        </div>
+      </section>
+
+      <!-------- Location -------->
+      <section class="location">
+        <div class="location-heading">
+          <div class="heading-box">
+            <h2>Komm vorbei</h2>
+          </div>
+        </div>
+        <iframe
+          class="map"
+          scrolling="no"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=10.121136009693148%2C54.34128888828807%2C10.123389065265657%2C54.34237870961976&amp;layer=mapnik&amp;marker=54.34183400003041%2C10.122263299999986"
+        ></iframe>
+      </section>
     </main>
-    <script src="../js/index.js"></script>
+
+    <!-------- Footer -------->
     <footer>
       <include src="footer.html"></include>
     </footer>
+
+    <!-------- JS Include -------->
+    <script src="../js/index.js"></script>
   </body>
 </html>

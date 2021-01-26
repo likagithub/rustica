@@ -1,16 +1,37 @@
 .header {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url(../images/coffee-latte-art2.jpg);
   background-repeat: no-repeat;
   height: 75vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   display: relative;
+
+  &.home {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/coffee-latte-art2.jpg);
+  }
+
+  &.cafe {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/coffee-shop.jpg);
+  }
+
+    &.herkunft {
+      background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../images/coffee-beans-fresh2.jpg);
+  }
 
   @include respond(media-xl) {
     height: 65vh;
@@ -21,5 +42,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20vh;
+  padding-top: 30vh;
+
+  @include respond(media-xl) {
+    padding-top: 20vh;
+  }
 }

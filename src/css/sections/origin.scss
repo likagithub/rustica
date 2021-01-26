@@ -1,59 +1,77 @@
 .origin {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../images/coffee-bags.jpg);
-  background-repeat: no-repeat;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-
-  a {
-    text-decoration: none;
-    color: $color-white;
-
+    padding: $section-padding-mobile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
     @include respond(media-xl) {
-      font-size: $font-size-text;
-    }
-
-    &::after {
-      content: " ";
-      width: 0;
-      height: 1px;
-      border-bottom: 0;
-      left: 0;
-      background-color: #fff;
-      visibility: hidden;
-      transition: all 0.3s ease-in-out;
-      display: block;
-    }
-
-    &:hover::after {
-      visibility: visible;
-      width: 100%;
-    }
-
-    &.active::after {
-      visibility: visible;
-      width: 100%;
+      padding: $section-padding-desktop;
     }
   }
-}
 
-.content-box-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 240px;
-  margin: auto;
-  text-align: center;
-
-  @include respond(media-xl) {
-    width: 300px;
+.area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    @include respond(media-md) {
+      flex-direction: row;
+    }
+  
+    @include respond(media-xl) {
+      width: 90vw;
+    }
+  
+    @include respond(media-xxl) {
+      width: 70vw;
+      max-width: 2000px;
+    }
   }
-}
+
+.fairness {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    @include respond(media-md) {
+      flex-direction: row-reverse;
+    }
+  
+    @include respond(media-xl) {
+      width: 90vw;
+    }
+  
+    @include respond(media-xxl) {
+      width: 70vw;
+      max-width: 2000px;
+    }
+
+    h3 {
+        width: 300px;
+    }
+  }
+
+.origin-pic {
+    width: 50vw;
+    max-width: 800px;
+    min-width: 250px;
+    display: flex;
+    margin-top: 26px;
+  
+    @include respond(media-md) {
+        margin-top: 10vh;
+    }
+  
+    &.coffee-plant-2 {
+      margin-left: auto;
+      margin-bottom: 7vh;
+
+      @include respond(media-md) {
+        margin-bottom: 15vh;
+    }
+    }
+  
+    &.coffee-worker {
+      margin-right: auto;
+    }
+  }

@@ -1,0 +1,27 @@
+.image-gallery {
+    padding: $section-padding-mobile-2;
+
+    @include respond(media-xl) {
+      padding: $section-padding-desktop-2;
+    }
+}
+
+.image-gallery-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+
+    @include respond(media-xl) {
+        width: 90vw;
+      }
+    
+      @include respond(media-xxl) {
+        width: 70vw;
+        max-width: 2000px;
+      }
+}
+
+.g-image {
+    width: 35vw;
+}

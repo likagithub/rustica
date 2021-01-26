@@ -67,7 +67,6 @@
   justify-content: space-between;
   margin-top: 5px;
 
-
   @include respond(media-xl) {
     width: 70px;
   }
@@ -76,7 +75,6 @@
 .icon-small {
   height: 15px;
   width: 15px;
-
 
   @include respond(media-xl) {
     height: 17px;
