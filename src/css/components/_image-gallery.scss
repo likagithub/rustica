@@ -12,14 +12,50 @@
     columns: 2;
     column-gap: 15px;
     display: inline-block;
-    margin: 0 auto -15px 0;
+    margin: 0 auto -15px auto;
 
     @include respond(media-xl) {
         width: 90vw;
-        columns: 4;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 75vh;
+        max-height: 850px;
+        max-width: 1490px;
+
+        .i2 {
+            order: 4;
+        } 
+
+        .i3 {
+            order: 5;
+        }
+
+        .i4 {
+            order: 1;
+        }
+
+        .i5 {
+            order: 2;
+        }
+
+        .i6 {
+            order: 7;
+        }
+
+        .i7 {
+            order: 6;
+        }
+
+        .i8 {
+            order: 3;
+        }
     }
     
     @include respond(media-xxl) {
+        height: 100vh;
+        max-height: 1040px;
         width: 70vw;
         max-width: 2000px;
     }
@@ -32,6 +68,7 @@
 
     @include respond(media-xl) {
         width: 21.4vw;
+        max-width: 360px;
     }
 
     @include respond(media-xxl) {
