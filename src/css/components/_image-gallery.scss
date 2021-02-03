@@ -8,7 +8,7 @@
     }
 }
 
-.image-gallery-grid {
+.image-gallery-content {
     columns: 2;
     column-gap: 15px;
     display: inline-block;
@@ -20,7 +20,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        height: 75vh;
+        height: calc(100vw / 2.1);
         max-height: 850px;
         max-width: 1490px;
 
@@ -54,7 +54,6 @@
     }
     
     @include respond(media-xxl) {
-        height: 100vh;
         max-height: 1040px;
         width: 70vw;
         max-width: 2000px;

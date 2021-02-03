@@ -1,9 +1,12 @@
 .origin {
-    padding: $section-padding-mobile;
-  
-    @include respond(media-xl) {
-      padding: $section-padding-desktop;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $section-padding-mobile;
+
+  @include respond(media-xl) {
+    padding: $section-padding-desktop;
+  }
   }
 
 .area {
