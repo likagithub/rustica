@@ -1,0 +1,144 @@
+.contact {
+    padding: $section-padding-mobile;
+
+  @include respond(media-xl) {
+    padding: $section-padding-desktop;
+    width: 90vw;
+    display: flex;
+    margin: 105px auto auto auto;
+  }
+
+  @include respond(media-xxl) {
+    width: 70vw;
+    max-width: 2000px;
+  }
+}
+
+.contact-heading {
+    width: 290px;
+
+    @include respond(media-xl) {
+        margin-right: 10vw;
+        width: 450px;
+    }
+    
+    h2 {
+        margin-top: 130px;
+        margin-bottom: 30px;
+
+        @include respond(media-lg) {
+            margin-bottom: 60px;
+        }
+
+        @include respond(media-xl) {
+            margin: 0;
+            width: 450px;
+        }
+    }
+}
+
+.form {
+    width: 100%;
+
+    @include respond(media-xl) {
+        font-size: $font-size-text;
+        max-width: 800px;
+    }
+}
+
+input, textarea, select {
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 3px solid $color-black;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: $font-size-text-m;
+
+    @include respond(media-xl) {
+        font-size: $font-size-text;
+    }
+}
+
+select {
+    border: 3px solid $color-black;
+    border-radius: 5px;
+    color: $color-white;
+    background-color: $color-black;
+}
+
+input[type=submit] {
+    margin: 40px auto auto auto;
+    padding: 20px 10px;
+    color: $color-white;
+    background-color: $color-anthrazit;
+    background: linear-gradient(
+      to right,
+      $color-brown-grey 50%,
+      $color-anthrazit 50%
+    );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    width: 170px;
+    border-radius: 5px;
+    border-bottom: none;
+    cursor: pointer;
+
+    &:hover {
+        background-position: left bottom;
+      }
+  
+      &:active {
+        background-color: $color-kraftpapier;
+      }
+}
+  
+  input[type=checkbox] {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  input[type=checkbox] + label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  input[type=checkbox] + label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 3px solid $color-black;
+    border-radius: 5px;
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  input[type=checkbox]:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 17%;
+    left: 1.5%;
+    width: 8px;
+    height: 8px;
+    border: 3px solid $color-black;
+    background-color: $color-black;
+    border-radius: 50px;
+
+    @include respond(media-xl) {
+        top: 25%;
+        left: 1%;
+    }
+  }

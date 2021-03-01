@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subpage</title>
+    <link rel="stylesheet" href="../css/main.scss" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-------- Body -------->
+  <body>
+    <!-------- Navigation & Header -------->
+    <div class="navbar">
+      <div class="logo-box-header">
+        <a href="/index.html"
+          ><img src="/images/_elements/logo.svg" alt="Logo" class="logo"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <a href="/das-cafe/index.html" class="dark">das Café</a>
+        <a href="/herkunft/index.html" class="dark">Herkunft</a>
+        <a href="/shop/index.html" class="dark">Shop</a>
+      </nav>
+    </div>
+
+    <!-------- Main Content -------->
+    <main>
+      <!-------- Contact Form -------->
+      <section class="contact">
+        <div class="contact-heading">
+          <h2 class="dark">Du hast Fragen? Schreib uns gern!</h2>
+        </div>
+        <div class="form">
+          <form action="mailto:-" method="post" enctype="text/plain">
+            <label for="name">Name*</label>
+            <input id="“name“" type="text" name="DeinName" />
+
+            <label for="email">E-Mail*</label>
+            <input id="email" type="email" name="DeineEmail" />
+
+            <label for="email">Telefonnummer</label>
+            <input id="email" type="email" name="DeineEmail" />
+
+            <select id="anliegen" name="DeinAnliegen">
+              <option value="betreff">Dein Betreff</option>
+              <option value="lieferung">Fragen zur Lieferung</option>
+              <option value="produkt">Fragen zum Produkt</option>
+              <option value="vertrieb">Vertriebsfrage</option>
+              <option value="keine">einfach nur so!</option>
+            </select>
+
+            <label for="message">Deine Nachricht</label>
+            <textarea
+              name="DeineNachricht"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input id="accept-pp" type="checkbox" name="Accept-PrivacyPolicy" />
+            <label for="accept-pp"
+              >Ich aktzeptiere die Datenschutzerklärung</label
+            >
+
+            <input id="submit" type="submit" value="abschicken" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-------- Footer -------->
+    <footer>
+      <include src="footer.html"></include>
+    </footer>
+
+    <!-------- JS Include -------->
+    <script src="../js/index.js"></script>
+  </body>
+</html>
