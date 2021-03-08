@@ -1,0 +1,181 @@
+// ------ desktop navigation ------ //
+
+.navbar {
+  display: none;
+}
+
+@include respond(media-md) {
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(media-xl) {
+    width: 90vw;
+    left: 50%;
+    margin-left: -45vw;
+  }
+
+  @include respond(media-xxl) {
+    width: calc(70vw + 50px);
+    max-width: 2000px;
+    left: 50%;
+    margin-left: -35vw;
+  }
+}
+
+.logo-box-header {
+  padding-left: 25px;
+}
+
+.logo {
+  height: 35px;
+  width: 35px;
+
+  @include respond(media-xxl) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.nav-desktop {
+  display: flex;
+  align-self: flex-end;
+  z-index: 100;
+  top: 0;
+  right: 0;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 20px 60px;
+
+    &.dark {
+      color: $color-anthrazit;
+
+      &::after {
+        background-color: $color-anthrazit;
+      }
+    }
+
+    @include respond(media-xxl) {
+      font-size: $font-size-text;
+    }
+
+    &::after {
+      content: " ";
+      width: 0;
+      height: 1px;
+      border-bottom: 0;
+      left: 0;
+      background-color: #fff;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+      display: block;
+    }
+
+    &:hover::after {
+      visibility: visible;
+      width: 100%;
+    }
+
+    &.active::after {
+      visibility: visible;
+      width: 100%;
+    }
+  }
+}
+}
+
+// ------ mobile navigation ------ //
+
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    color: $color-white;
+    height: 25px;
+    width: 50px;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    text-align: center;
+    z-index: 2000;
+  }
+
+  &__background {
+    background-color: $color-black;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: left 1s linear;
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 100%;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: left 1s linear;
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+  }
+
+  &__item {
+    
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-size: $font-size-h3-m;
+      line-height: 2.5;
+      text-decoration: none;
+    }
+  }
+
+  // --- funtionality --- //
+
+  &__checkbox:checked ~ &__background {
+    opacity: 1;
+    left: 0%;
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+  }
+
+    // --- icon --- //
+
+  &__icon {
+
+  }
+
+  @include respond(media-md) {
+    display: none;
+  }
+}

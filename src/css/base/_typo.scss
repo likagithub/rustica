@@ -99,6 +99,10 @@ p, li {
     color: $color-white;
     font-size: $font-size-text;
     margin: 10px 0 0 0;
+
+    &.dark {
+      color: $color-black;
+    }
   }
 
   &.product-price {

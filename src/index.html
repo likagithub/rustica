@@ -14,19 +14,45 @@
 
   <!-------- Body -------->
   <body>
-    <!-------- Navigation & Header -------->
+    <!-------- Navigation Desktop -------->
     <div class="navbar">
       <div class="logo-box-header">
-        <a href="#"
+        <a href="/index.html"
           ><img src="/images/_elements/logo.svg" alt="Logo" class="logo"
         /></a>
       </div>
-      <nav class="navigation">
-        <a href="/das-cafe/index.html">das Café</a>
-        <a href="/herkunft/index.html">Herkunft</a>
-        <a href="/shop/index.html">Shop</a>
+      <div class="desktop-menu">
+        <nav class="nav-desktop">
+          <a href="/das-cafe/index.html">das Café</a>
+          <a href="/herkunft/index.html">Herkunft</a>
+          <a href="/shop/index.html">Shop</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-------- Navigation Mobile -------->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="/das-cafe/index.html" class="navigation__link">das Café</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/herkunft/index.html" class="navigation__link">Herkunft</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/shop/index.html" class="navigation__link">Shop</a>
+          </li>
+        </ul>
       </nav>
     </div>
+
+    <!-------- Header -------->
     <include src="header-home.html"></include>
 
     <!-------- Main Content -------->

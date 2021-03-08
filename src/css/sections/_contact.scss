@@ -44,6 +44,52 @@
         font-size: $font-size-text;
         max-width: 800px;
     }
+
+    input[type=checkbox] {
+      padding: 0;
+      height: initial;
+      width: initial;
+      margin-bottom: 0;
+      display: none;
+      cursor: pointer;
+    }
+    
+    input[type=checkbox] + label {
+      position: relative;
+      cursor: pointer;
+    }
+    
+    input[type=checkbox] + label:before {
+      content:'';
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 3px solid $color-black;
+      border-radius: 5px;
+      padding: 8px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    
+    input[type=checkbox]:checked + label:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 17%;
+      left: 1.5%;
+      width: 8px;
+      height: 8px;
+      border: 3px solid $color-black;
+      background-color: $color-black;
+      border-radius: 50px;
+  
+      @include respond(media-xl) {
+          top: 25%;
+          left: 1%;
+      }
+    }
 }
 
 input, textarea, select {
@@ -97,48 +143,4 @@ input[type=submit] {
       }
 }
   
-  input[type=checkbox] {
-    padding: 0;
-    height: initial;
-    width: initial;
-    margin-bottom: 0;
-    display: none;
-    cursor: pointer;
-  }
   
-  input[type=checkbox] + label {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  input[type=checkbox] + label:before {
-    content:'';
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: 3px solid $color-black;
-    border-radius: 5px;
-    padding: 8px;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  input[type=checkbox]:checked + label:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 17%;
-    left: 1.5%;
-    width: 8px;
-    height: 8px;
-    border: 3px solid $color-black;
-    background-color: $color-black;
-    border-radius: 50px;
-
-    @include respond(media-xl) {
-        top: 25%;
-        left: 1%;
-    }
-  }

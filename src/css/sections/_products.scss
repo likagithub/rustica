@@ -8,6 +8,16 @@
   @include respond(media-xl) {
     padding: $section-padding-desktop;
   }
+
+  &.shop {
+    @include respond(media-xl) {
+      margin-top: 105px;
+    }
+  }
+
+  &.light {
+    background-color: $color-white;
+  }
 }
 
 .product-content {
