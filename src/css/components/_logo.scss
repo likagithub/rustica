@@ -1,0 +1,13 @@
+.logo-box-header {
+  padding-left: 25px;
+}
+
+.logo {
+  height: 35px;
+  width: 35px;
+
+  @include respond(media-xxl) {
+    height: 40px;
+    width: 40px;
+  }
+}

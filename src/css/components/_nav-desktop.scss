@@ -1,3 +1,11 @@
+// ------ desktop navigation ------ //
+
+.navbar {
+  display: none;
+}
+
+@include respond(media-md) {
+
 .navbar {
   position: absolute;
   width: 100%;
@@ -19,21 +27,7 @@
   }
 }
 
-.logo-box-header {
-  padding-left: 25px;
-}
-
-.logo {
-  height: 35px;
-  width: 35px;
-
-  @include respond(media-xxl) {
-    height: 40px;
-    width: 40px;
-  }
-}
-
-.navigation {
+.nav-desktop {
   display: flex;
   align-self: flex-end;
   z-index: 100;
@@ -80,4 +74,5 @@
       width: 100%;
     }
   }
+}
 }
