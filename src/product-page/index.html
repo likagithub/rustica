@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subpage</title>
+    <link rel="stylesheet" href="../css/main.scss" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-------- Body -------->
+  <body>
+    <!-------- Navigation Desktop -------->
+    <div class="navbar">
+      <div class="logo-box-header">
+        <a href="/index.html"
+          ><img src="/images/_elements/logo-dark.svg" alt="Logo" class="logo"
+        /></a>
+      </div>
+      <nav class="nav-desktop">
+        <a href="/das-cafe/index.html" class="dark">das Café</a>
+        <a href="/herkunft/index.html" class="dark">Herkunft</a>
+        <a href="/shop/index.html" class="dark active">Shop</a>
+      </nav>
+    </div>
+
+    <!-------- Navigation Mobile -------->
+    <div class="navbar-mobile">
+      <div class="logo-box-header">
+        <a href="/index.html"
+          ><img src="/images/_elements/logo-dark.svg" alt="Logo" class="logo"
+        /></a>
+      </div>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon dark">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="/das-cafe/index.html" class="navigation__link"
+                >das Café</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="/herkunft/index.html" class="navigation__link"
+                >Herkunft</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="/shop/index.html" class="navigation__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-------- Main Content -------->
+    <main>
+      <!-------- Produtc Presentation -------->
+      <sectiton class="product-presentation">
+        <div class="product-content">
+          <img
+            src="/images/coffee-product-rustica-kraftpapier.png"
+            alt="product picture on a beige background"
+          />
+          <div class="product-name">
+            <h2 class="dark">Costa Rica</h2>
+            <p>6,90€ – 26,90€</p>
+          </div>
+          <p>
+            Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine
+            Säure. Den Gaumen umschmeichelt ein vollmundiges Haselnussaroma.
+            Gleich probieren!
+          </p>
+          <select id="menge" name="Menge">
+            <option value="frage">wie viel Kaffee brauchst du?</option>
+            <option value="viertel">250g</option>
+            <option value="halb">500g</option>
+            <option value="ganz">1.000g</option>
+          </select>
+          <a href="/shop/index.html" class="btn btn-dark">In den Warenkorb</a>
+        </div>
+        <div class="icon-line-grand">
+          <div class="icon-box">
+            <object
+              type="image/svg+xml"
+              data="/images/_icons/icon-coffee-beans-dark.svg"
+              alt="coffee beans"
+              class="icon-grand"
+            >
+              Your browser does not support SVGs
+            </object>
+            <p>Mild<br />geröstet</p>
+          </div>
+          <div class="icon-box">
+            <object
+              type="image/svg+xml"
+              data="/images/_icons/icon-french-press-dark.svg"
+              alt="french press"
+              class="icon-grand"
+            >
+              Your browser does not support SVGs
+            </object>
+            <p>Für French<br />Press</p>
+          </div>
+          <div class="icon-box">
+            <object
+              type="image/svg+xml"
+              data="/images/_icons/icon-coffee-beans2-dark.svg"
+              alt="coffee beans shovel"
+              class="icon-grand"
+            >
+              Your browser does not support SVGs
+            </object>
+            <p>gemahlen oder<br />als Bohne</p>
+          </div>
+        </div>
+        <div>
+          <h3>Beschreibung</h3>
+          <p>
+            MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der
+            Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang
+            der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich
+            indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar
+            Land in Kooperativen zusammengeschlossen und verzichten komplett auf
+            Industriedünger und Pestizide. Schonend geröstet, entwickelt diese
+            einzigartige Spezialität ein überraschend vielschichtiges
+            Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer
+            Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus
+            kontrolliert ökologischem Anbau. DE-ÖKO-003 /
+            Nicht-EU-Landwirtschaft.
+          </p>
+        </div>
+      </sectiton>
+
+      <!-------- Produtcs -------->
+      <sectiton class="product-overview">
+        <div class="product-content">
+          <h2 class="light">Entdecke unsere Kaffee Sorten</h2>
+          <div class="products">
+            <div class="product-box">
+              <img
+                class="product-pic"
+                src="/images/coffee-product-rustica2.jpg"
+                alt="product coffee from costa rica"
+              />
+              <p class="product-name">Costa Rica</p>
+              <p class="product-price">6,90€ – 26,90€</p>
+              <div class="icon-line-small">
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans.svg"
+                  alt="coffee beans"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-french-press.svg"
+                  alt="french press"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans2-light.svg"
+                  alt="coffee beans shovel"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+              </div>
+            </div>
+            <div class="product-box">
+              <img
+                class="product-pic"
+                src="/images/coffee-product-rustica2.jpg"
+                alt="product coffee from costa rica"
+              />
+              <p class="product-name">Costa Rica</p>
+              <p class="product-price">6,90€ – 26,90€</p>
+              <div class="icon-line-small">
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans.svg"
+                  alt="coffee beans"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-french-press.svg"
+                  alt="french press"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans2-light.svg"
+                  alt="coffee beans shovel"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+              </div>
+            </div>
+            <div class="product-box">
+              <img
+                class="product-pic"
+                src="/images/coffee-product-rustica2.jpg"
+                alt="product coffee from costa rica"
+              />
+              <p class="product-name">Costa Rica</p>
+              <p class="product-price">6,90€ – 26,90€</p>
+              <div class="icon-line-small">
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans.svg"
+                  alt="coffee beans"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-french-press.svg"
+                  alt="french press"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans2-light.svg"
+                  alt="coffee beans shovel"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+              </div>
+            </div>
+            <div class="product-box">
+              <img
+                class="product-pic"
+                src="/images/coffee-product-rustica2.jpg"
+                alt="product coffee from costa rica"
+              />
+              <p class="product-name">Costa Rica</p>
+              <p class="product-price">6,90€ – 26,90€</p>
+              <div class="icon-line-small">
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans.svg"
+                  alt="coffee beans"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-french-press.svg"
+                  alt="french press"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans2-light.svg"
+                  alt="coffee beans shovel"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="/shop/index.html" class="btn btn-border">alle Produkte</a>
+      </sectiton>
+    </main>
+
+    <!-------- Footer -------->
+    <footer>
+      <include src="footer.html"></include>
+    </footer>
+
+    <!-------- JS Include -------->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -24,7 +24,7 @@
     
     h2 {
         margin-top: 130px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
 
         @include respond(media-lg) {
             margin-bottom: 60px;
@@ -90,13 +90,17 @@
           left: 1%;
       }
     }
+
+    ::-webkit-input-placeholder {
+      color: $color-light-grey;
+    }
 }
 
 input, textarea, select {
     width: 100%;
     display: block;
-    padding: 10px 20px;
-    margin-bottom: 40px;
+    padding: 15px 20px;
+    margin-bottom: 50px;
     border: none;
     border-bottom: 3px solid $color-black;
     box-sizing: border-box;
