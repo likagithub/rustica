@@ -1,0 +1,14 @@
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+
+    .cart-items {
+        position: absolute;
+        top: -5px;
+        right: -7px;
+        background-color: $color-petrol;
+        padding: 0 5px;
+        border-radius: 50%;
+        color: $color-white;
+    }
+}

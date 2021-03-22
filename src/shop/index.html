@@ -26,6 +26,14 @@
         <a href="/herkunft/index.html" class="dark">Herkunft</a>
         <a href="/shop/index.html" class="dark active">Shop</a>
       </nav>
+      <div class="cart-btn">
+        <img
+          src="/images/_elements/cart-empty.svg"
+          alt="Shopping Cart"
+          class="cart-icon"
+        />
+        <div class="cart-items">0</div>
+      </div>
     </div>
 
     <!-------- Navigation Mobile -------->
@@ -34,6 +42,14 @@
         <a href="/index.html"
           ><img src="/images/_elements/logo-dark.svg" alt="Logo" class="logo"
         /></a>
+      </div>
+      <div class="cart-btn">
+        <img
+          src="/images/_elements/cart-empty.svg"
+          alt="Shopping Cart"
+          class="cart-icon"
+        />
+        <div class="cart-items">0</div>
       </div>
       <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
@@ -63,7 +79,7 @@
 
     <!-------- Main Content -------->
     <main>
-      <!-------- Produtcs -------->
+      <!-------- Products -------->
       <sectiton class="product-overview shop light">
         <div class="product-content">
           <div class="contact-heading">
@@ -71,6 +87,56 @@
           </div>
 
           <div class="products">
+            <!-------- Single Product -------->
+            <div class="product-box">
+              <article class="product">
+                <div class="product-img-container">
+                  <img
+                    class="product-pic"
+                    src="/images/coffee-product-rustica-grey.png"
+                    alt="product coffee from costa rica"
+                  />
+                  <div class="split-btn">
+                    <button class="btn-250" data-id="1">250g</button>
+                    <button class="btn-500" data-id="1">500g</button>
+                    <button class="btn-1000" data-id="1">1.000g</button>
+                  </div>
+                </div>
+                <p class="product-name dark">Costa Rica</p>
+                <p class="product-price">6,90€ – 26,90€</p>
+              </article>
+              <div class="icon-line-small">
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans-dark.svg"
+                  alt="coffee beans"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-french-press-dark.svg"
+                  alt="french press"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+                <object
+                  type="image/svg+xml"
+                  data="/images/_icons/icon-coffee-beans2-dark.svg"
+                  alt="coffee beans shovel"
+                  class="icon-small"
+                >
+                  Your browser does not support SVGs
+                </object>
+              </div>
+              <div class="anzeigen-btn">
+                <a href="/shop/index.html" class="btn btn-dark">anzeigen</a>
+              </div>
+            </div>
+
+            <!-------- Single Product -------->
             <div class="product-box">
               <a href="/product-page/index.html">
                 <img
@@ -108,6 +174,7 @@
               </div>
             </div>
 
+            <!-------- Single Product -------->
             <div class="product-box">
               <a href="/product-page/index.html">
                 <img
@@ -145,6 +212,7 @@
               </div>
             </div>
 
+            <!-------- Single Product -------->
             <div class="product-box">
               <a href="/product-page/index.html">
                 <img
@@ -182,6 +250,7 @@
               </div>
             </div>
 
+            <!-------- Single Product -------->
             <div class="product-box">
               <a href="/product-page/index.html">
                 <img
@@ -219,6 +288,7 @@
               </div>
             </div>
 
+            <!-------- Single Product -------->
             <div class="product-box">
               <a href="/product-page/index.html">
                 <img
@@ -256,6 +326,7 @@
               </div>
             </div>
 
+            <!-------- Single Product -------->
             <div class="product-box">
               <a href="/product-page/index.html">
                 <img
@@ -293,43 +364,7 @@
               </div>
             </div>
 
-            <div class="product-box">
-              <a href="/product-page/index.html">
-                <img
-                  class="product-pic"
-                  src="/images/coffee-product-rustica-grey.png"
-                  alt="product coffee from costa rica"
-              /></a>
-              <p class="product-name dark">Costa Rica</p>
-              <p class="product-price">6,90€ – 26,90€</p>
-              <div class="icon-line-small">
-                <object
-                  type="image/svg+xml"
-                  data="/images/_icons/icon-coffee-beans-dark.svg"
-                  alt="coffee beans"
-                  class="icon-small"
-                >
-                  Your browser does not support SVGs
-                </object>
-                <object
-                  type="image/svg+xml"
-                  data="/images/_icons/icon-french-press-dark.svg"
-                  alt="french press"
-                  class="icon-small"
-                >
-                  Your browser does not support SVGs
-                </object>
-                <object
-                  type="image/svg+xml"
-                  data="/images/_icons/icon-coffee-beans2-dark.svg"
-                  alt="coffee beans shovel"
-                  class="icon-small"
-                >
-                  Your browser does not support SVGs
-                </object>
-              </div>
-            </div>
-
+            <!-------- Single Product -------->
             <div class="product-box">
               <a href="/product-page/index.html">
                 <img
@@ -369,21 +404,65 @@
           </div>
         </div>
       </sectiton>
-    </main>
 
-    <!-------- Location -------->
-    <section class="location">
-      <div class="location-heading">
-        <div class="heading-box">
-          <h2>Komm vorbei</h2>
+      <!-------- Shopping Cart -------->
+      <div class="cart-overlay">
+        <div class="cart">
+          <div class="cart-padding">
+            <span class="close-cart"
+              ><img src="/images/_elements/burger-menu-close.svg" alt=""
+            /></span>
+            <span><h2>Warenkorb</h2></span>
+            <span><p class="item-amount number">0</p></span>
+            <span><p class="item-amount text">Produkte</p></span>
+            <div class="cart-content">
+              <!-------- Cart item -------->
+              <div class="cart-item">
+                <img
+                  src="/images/coffee-product-rustica-kraftpapier.png"
+                  alt=""
+                />
+                <div>
+                  <h4>Costa Rica</h4>
+                  <p>gemahlen 250g</p>
+                  <p>6,90€</p>
+                  <span class="remove-item"
+                    ><img src="/images/_elements/burger-menu-close.svg" alt=""
+                  /></span>
+                </div>
+              </div>
+              <!-------- Cart item end-------->
+            </div>
+          </div>
+          <div class="cart-footer">
+            <span><p class="cart-total text">Zwischensumme</p></span>
+            <span><p class="cart-total number">6,90 €</p></span>
+            <span><p class="cart-total text">Versandkosten</p></span>
+            <span><p class="cart-total number">3,90 €</p></span>
+            <hr />
+            <span><p class="cart-total text">Gesamtbetrag</p></span>
+            <span><p class="cart-total number">10,80 €</p></span>
+            <div class="checkout-btn">
+              <a href="#" class="btn btn-kraftpapier">Zur Kasse</a>
+            </div>
+          </div>
         </div>
       </div>
-      <iframe
-        class="map"
-        scrolling="no"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=10.121136009693148%2C54.34128888828807%2C10.123389065265657%2C54.34237870961976&amp;layer=mapnik&amp;marker=54.34183400003041%2C10.122263299999986"
-      ></iframe>
-    </section>
+
+      <!-------- Location -------->
+      <section class="location">
+        <div class="location-heading">
+          <div class="heading-box">
+            <h2>Komm vorbei</h2>
+          </div>
+        </div>
+        <iframe
+          class="map"
+          scrolling="no"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=10.121136009693148%2C54.34128888828807%2C10.123389065265657%2C54.34237870961976&amp;layer=mapnik&amp;marker=54.34183400003041%2C10.122263299999986"
+        ></iframe>
+      </section>
+    </main>
 
     <!-------- Footer -------->
     <footer>
@@ -392,5 +471,6 @@
 
     <!-------- JS Include -------->
     <script src="../js/index.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

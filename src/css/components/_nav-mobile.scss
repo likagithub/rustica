@@ -11,6 +11,15 @@
   @include respond(media-md) {
     display: none;
   }
+
+  .cart-btn {
+    margin-right: 90px;
+    margin-left: auto;
+
+    .cart {
+      height: 25px;
+    }
+  }
 }
 
 .navigation {
@@ -58,10 +67,6 @@
     left: 20%;
     transform: translate(-50%,-50%);
     list-style: none;
-  }
-
-  &__item {
-    
   }
 
   &__link {

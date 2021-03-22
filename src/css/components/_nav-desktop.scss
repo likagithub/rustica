@@ -25,14 +25,18 @@
     left: 50%;
     margin-left: -35vw;
   }
+
+  .cart-btn {
+    margin-right: 25px;
+  }
 }
 
 .nav-desktop {
   display: flex;
-  align-self: flex-end;
   z-index: 100;
   top: 0;
   right: 0;
+  margin-left: auto;
 
   a {
     color: $color-white;

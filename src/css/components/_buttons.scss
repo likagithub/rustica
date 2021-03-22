@@ -52,4 +52,116 @@
       background-color: $color-kraftpapier;
     }
   }
+
+  &.btn-kraftpapier {
+    color: $color-black;
+    background-color: $color-kraftpapier;
+    background: linear-gradient(
+      to right,
+      $color-brown-grey 50%,
+      $color-kraftpapier 50%
+    );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    width: 63px;
+
+    &:hover {
+      background-position: left bottom;
+      color: $color-white;
+    }
+
+    &:active {
+      background-color: $color-kraftpapier;
+    }
+  }
+}
+
+.warenkorb-btn {
+  .btn {
+      &.btn-dark {
+          display: block;
+          margin: auto;
+          width: 140px;
+          padding: 18px 50px 18px 50px;
+      }
+  }
+}
+
+.anzeigen-btn {
+  margin-top: 20px;
+  .btn {
+    &.btn-dark {
+      padding: 12px 30px;
+      width: 50px;
+      margin-top: 100px;
+    }
+  }
+}
+
+.checkout-btn {
+    .btn-kraftpapier {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+.split-btn {
+  display: none;
+
+  @include respond(media-sm) {
+  display: inline;
+  position: absolute;
+  top: 87%;
+  right: 5px;
+}
+
+button {
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  background-color: $color-white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(
+  to right,
+  $color-light-grey 50%,
+  $color-white 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  width: 63px;
+  cursor: pointer;
+
+&:hover {
+background-position: left bottom;
+}
+
+&:active {
+  border: none;
+}
+
+  &.btn-250 {
+      right: 130px;
+      border-radius: 5px 0 0 5px;
+      padding: 5px 0px 5px 5px;
+      z-index: 100;
+  }
+
+  &.btn-500 {
+      right: 67px;
+      padding: 5px 5px;
+      border-radius: 0;
+      z-index: 50;
+  }
+
+  &.btn-1000 {
+      right: 5px;
+      border-radius: 0 5px 5px 0;
+      padding: 5px 5px 5px 0px;
+      z-index: 100;
+  }
+}
 }
