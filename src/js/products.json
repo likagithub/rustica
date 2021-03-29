@@ -1,9 +1,8 @@
-{
-"items": [
+[
   {
     "id": 0,
     "productName": "Äthiopien",
-    "image": {"fields": {"file": {"url": "./images/coffee-product-rustica-kraftpapier.png"}}},
+    "imageUrl": "./images/coffee-product-rustica-kraftpapier.png",
     "variants": [
       {
         "name": "500g",
@@ -192,4 +191,4 @@
     "description": "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft."
   }
 ]
-}
+

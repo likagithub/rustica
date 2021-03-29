@@ -111,10 +111,10 @@
   display: none;
 
   @include respond(media-sm) {
-  display: inline;
-  position: absolute;
-  top: 87%;
-  right: 5px;
+  // display: inline;
+  // position: absolute;
+  // top: 87%;
+  // right: 5px;
 }
 
 button {
